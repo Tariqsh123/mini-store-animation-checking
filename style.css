@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+}
+
+.side-nav {
+	width: 200px;
+	height: 100%;
+	background: #fdfdf6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 30px;
+    border-right: 2px solid #dfdfd9;
+}
+
+.logo {
+	display: block;
+    cursor: pointer;
+	margin-bottom: 130px;
+    color: rgb(240, 130, 27);   
+}
+.logo:hover{
+    color: black;
+}
+.nav-links {
+	list-style: none;
+	position: relative;
+}
+
+.nav-links li {
+	padding: 10px 0;
+}
+
+.nav-links li a {
+	color: rgb(12, 12, 11);
+	text-decoration: none;
+	padding: 10px 14px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li a i {
+	font-size: 22px;
+	margin-right: 20px;
+}
+
+.active {
+	background: rgb(240, 130, 27);
+	width: 100%;
+	height: 47px;
+	position: absolute;
+	left: 0;
+	top: 2.6%;
+	z-index: -1;
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+	display: none;
+	transition: top 0.5s;
+}
+
+.nav-links li:hover a {
+	color: #fff;
+	transition: 0.3s;
+}
+
+.nav-links li:hover~.active {
+	display: block;
+}
+
+.nav-links li:nth-child(1):hover~.active {
+	top: 2.6%;
+}
+
+.nav-links li:nth-child(2):hover~.active {
+	top: 19.2%;
+}
+
+.nav-links li:nth-child(3):hover~.active {
+	top: 35.8%;
+}
+
+.nav-links li:nth-child(4):hover~.active {
+	top: 52.4%;
+}
+
+.nav-links li:nth-child(5):hover~.active {
+	top: 69%;
+}
+
+.nav-links li:nth-child(6):hover~.active {
+	top: 85.6%;
+}
+.container{
+    height: 100%;
+    width: 87.4vw;
+    /* border: 1px solid black; */
+    position: relative;
+    left: 200px;
+    position: fixed;
+}
+#box1{
+    height: 100%;
+    background-color: #f5f5f5;
+    width: 43.7vw;
+    position: fixed;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#box1 marquee{
+    font-size: 50px;
+    background-color: rgb(240, 130, 27) ;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#box1 marquee:hover{
+    color: black;
+}
+#box1 div{
+    height: 40px;
+    font-weight: bolder;
+    width: 300px;
+    background-color:  rgb(240, 130, 27);
+    color: white;
+    transition: width 2s;
+}
+.option{
+    transition-timing-function: ease-out;
+    margin-bottom: 2px;
+}
+#box1 div:hover{
+    width: 90%;
+    cursor: pointer;
+    color: black;
+}
+#box1 img{
+    width: 100%;
+    cursor: pointer;
+    height: 250px;
+}
+#box1 img:hover{
+    filter: blur(8px);
+}
+
+#box2{
+    float: right;
+    height: 100%;
+    width: 43.7vw;
+    background-color: #fdfdf6;
+    /* position: fixed; */
+    border-left: 2px solid black;
+}
+#box2 marquee{
+    font-size: 50px;
+    background-color: rgb(240, 130, 27) ;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#box2 marquee:hover{
+    color: black;
+}
+#card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#card1{
+    height: 100%;
+    /* border: 1px solid black; */
+    
+}
+#card2{
+    height: 100%;
+/* border: 1px solid black; */
+}
+.card{
+    margin-bottom: 5px;
+    height: 245px;
+    width: 250px;
+    border: 1px solid black;
+    font-size: larger;
+    text-align: center;
+    background-color:rgb(240, 130, 27)  ;
+    color: white;
+    transition: width 2s, height 2s, transform 2s;
+}
+.card:hover{
+	background: #dfdfd9;
+    color: black;
+    transform: rotate(-30deg);
+}
+.card img{
+    height: 200px;
+    width: 248px;
+}
